@@ -1,0 +1,1 @@
+gcc sorting.h utils.c sorting.c -o sorting
