@@ -6,8 +6,15 @@ int main()
 {
     int arr[ARR_LEN] = {7,28,2,17,19,21,15,31,22,4,14,25};
 
+    printf("Original array :\n");
+    print_array(arr, ARR_LEN);
+    printf("\n\n\n");
     printf("************Bubble Sort*********************\n");
     bubble_sort(arr, ARR_LEN);
+    printf("********************************************\n");
+    printf("\n\n\n");
+    printf("************Insertion Sort******************\n");
+    insertion_sort(arr, ARR_LEN);
     printf("********************************************\n");
     printf("\n\n\n");
 }

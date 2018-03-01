@@ -27,3 +27,21 @@ void bubble_sort(int a[], int len)
     print_array(a,len);
     return;
 }
+
+void insertion_sort(int a[], int len)
+{
+    int i,j;
+    for(i=1;i<len;i++) {
+        j = i;
+        while (j>0 && a[j-1] > a[j]) {
+            int temp = a[j-1];
+            a[j-1] = a[j];
+            a[j] = temp;
+            j--;
+        }
+        printf("\nStep %d:\n", i);
+        print_array(a, len);
+    }
+    printf("\nFinal:\n");
+    print_array(a, len);
+}
